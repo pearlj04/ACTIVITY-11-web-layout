@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efd7e6;
+  }
+  h2 {text-align: center;}
+  
+  /* Style the header */
+  header {
+    background-color: #af2d79;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: right;
+    width: 30%;
+    height: 600px; /* only for demonstration, should be removed */
+    background: #e8bbd8;
+    padding: 20px;
+  }
+
+  /* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #631944;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 20px 30px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #f0c3e2;
+color: black;
+}
+  
+  /* Style the list inside the menu */
+  nav  {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    height: 250px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+ section::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #b35e81;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
